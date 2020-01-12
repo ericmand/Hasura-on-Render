@@ -1,0 +1,15 @@
+services:
+- type: web
+  name: hasura
+  env: docker
+  healthCheckPath: /
+  envVars:
+  - key: HASURA_GRAPHQL_DATABASE_URL
+    fromDatabase:
+      name: hasura
+      property: connectionString
+  - key: HASURA_GRAPHQL_ENABLE_CONSOLE
+    value: true
+
+databases:
+- name: hasura
