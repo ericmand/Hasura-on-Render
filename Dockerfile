@@ -1,4 +1,1 @@
 FROM hasura/graphql-engine:latest
-ENV HASURA_GRAPHQL_ENABLE_CONSOLE=true
-ENV HASURA_GRAPHQL_DATABASE_URL=postgres://hasura_example_user:onSTVXaWMBMPq801rQMbNaS4Mb461J4s@dpg-bod9lmkdnlam7krh0kp0/hasura_example
-
